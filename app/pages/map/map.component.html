@@ -1,0 +1,59 @@
+<div class=" row margin-0">
+  <div class=" col-md-12">
+    <div class=" card card-plain">
+      <div class=" card-header">VNOC Dashboard</div>
+      <div class=" card-body">
+        <div class=" map" id="map"></div>
+        <div id="markers"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sideData">
+    <div class="vertical-menu">
+      <h4>SLA</h4>
+      <div class="container">
+        <div class="row" *ngFor="let item of verticalData.sla | keyvalue">
+          <div class="col-md-6"><p>{{item.key}}</p></div>
+          <div class="col-md-4">
+              <div class="progress" style="height: 3px;"> 
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width:90%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div> 
+          </div>
+          <div class="col-md-2"><p>{{item.value}}</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="vertical-menu">
+        <h4>Uptime</h4>
+        <div class="container">
+          <div class="row" *ngFor="let item of verticalData.upTime | keyvalue">
+            <div class="col-md-6"><p>{{item.key}}</p></div>
+            <div class="col-md-4">
+                <div class="progress" style="height: 3px;"> 
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width:90%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div> 
+            </div>
+            <div class="col-md-2"><p>{{item.value}}</p></div>
+          </div>
+        </div>
+    </div>
+    <div class="vertical-menu">
+        <h4>Downtime</h4>
+        <div class="container">
+          <div class="row" *ngFor="let item of verticalData.downTime | keyvalue">
+            <div class="col-md-6"><p>{{item.key}}</p></div>
+            <div class="col-md-4">
+                <div class="progress" style="height: 3px;"> 
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width:90%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div> 
+            </div>
+            <div class="col-md-2"><p>{{item.value}}</p></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
