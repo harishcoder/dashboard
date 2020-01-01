@@ -42,8 +42,9 @@
 
 #markers{
     position: absolute;
-    top: 15px;  
-    left: 150px;
+    display: inline-flex;
+    top: 8px;  
+    left: 190px;
 }
 
 .footer .copyright {
@@ -53,6 +54,30 @@
 
 .card .card-body {
     padding: 0px !important;
+}
+
+.leftWrapper{
+    position: absolute;
+    width: 300px;
+    padding-left: 30px;
+    height: 100vh;
+    right: 15px;
+    top: 50px;
+    background: rgb(2,0,36); 
+    background: linear-gradient(90deg, rgba(48,54,55,0.7721638997395833) 100%,rgba(56,56,66,0.7374300061821604) 31%, rgba(2,0,36,0.014740930551908282) 0%, );
+
+}
+
+.rightWrapper{
+    position: absolute;
+    width: 300px;
+    padding-right: 30px;
+    height: 100vh;
+    left: 15px;
+    top: 50px;
+    background: rgb(2,0,36); 
+    background: linear-gradient(90deg, rgba(2,0,36,0.014740930551908282) 0%, rgba(56,56,66,0.7374300061821604) 31%, rgba(48,54,55,0.7721638997395833) 100%);
+
 }
 
 
@@ -71,4 +96,27 @@
 .card .card-header {
     padding: 15px  !important;
    
+}
+
+#markers ul{
+    margin:0px 10px;
+}
+
+.backButton {
+    background: snow;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    cursor: pointer;
+}
+
+.backButton:hover{
+    width:45px;
+    padding: 10px 0px 10px 12px;
+    background: #fdd0ff;
+    box-shadow: rgba(10,10,10,10);
 }
